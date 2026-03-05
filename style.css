@@ -16,6 +16,9 @@ html {
 */
 body {
 	font-family: Helvetica, Geneva, sans-serif;
+	color: white;
+	background-image: url('https://file.garden/ZWlUCY4S7Xz2vypS/archived%20backgrounds/colours/blue/026(1).gif');
+
 }
 a {
 	color: #2772B0;
@@ -25,12 +28,19 @@ a {
 	max-width: 1200px;
 	margin: 0 auto; /* margin of 0 on top and bottom, auto on left and right */
 	float: none;
-	background-color: #fff;
 }
 
+/* targeting images */
 div img {
 	width: 100%;
 	max-width: 225px; 
+	display: block;
+	margin: 0 auto;
+}
+
+/* targeting headings */
+div h3 {
+	text-align: center;
 }
 
 /* grid system -- mobile first! */
@@ -39,47 +49,50 @@ div img {
 	display: flex;
     /*specifies direction + wrapping behavior*/
 	flex-flow: row wrap;
+	margin-top: 10px;
 }
 
 /* attribute selector to give some margin between columns and apply styles to flex items */
 
 [class*="col-"] {
 	margin-left: 4%;
-	flex: 0 0 92%;
+	flex: 0 0 92%;	
+
+	border: 2px ridge white;
+	/*background-color: mediumblue;*/
 }
 
 /* Add background colors to see how much space each column is taking */
 
+
 .col-1 {
-	background-color: #A3CDD9;
+
 }
 
 .col-2 {
-	background-color: #FFFCE6;
+	
 }
 
 .col-3-1 {
-	background-color: #A3CDD9;
+
 }
 
 .col-3-2 {
-	background-color: goldenrod;
+
 }
 
 .col-4 {
-	background-color: peru;
+	
 }
 
 .col-5-1 {
-	background-color: #A3CDD9;
+
 }
 
 .col-5-2 {
-	background-color: beige;
 }
 
 .col-5-3 {
-	background-color: #A3CDD9;
 }
 
 /* Tablet Landscape Screen Sizes */
