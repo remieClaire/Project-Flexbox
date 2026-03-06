@@ -15,19 +15,24 @@ html {
 * good practice to have a generic family font
 */
 body {
-	font-family: Helvetica, Geneva, sans-serif;
+	font-family: Helvetica, Geneva, sans-serif; /* Geneva runs on all Mac machines */
 	color: white;
 	background-image: url('https://file.garden/ZWlUCY4S7Xz2vypS/archived%20backgrounds/colours/blue/026(1).gif');
 
 }
 a {
-	color: #2772B0;
+	color: aqua;
 }
 .wrapper {
 	width: 97%;
 	max-width: 1200px;
 	margin: 0 auto; /* margin of 0 on top and bottom, auto on left and right */
 	float: none;
+}
+
+/* header img needs different attributes */
+div img.header-img {
+	max-width: 400px;
 }
 
 /* targeting images */
@@ -42,6 +47,18 @@ div img {
 div h3 {
 	text-align: center;
 }
+
+/* targeting paragraphs */
+div p {
+	text-align: center;
+}
+
+
+/* targeting links which are stored in <p> element */
+article p:last-of-type {
+	text-align: left;
+}
+
 
 /* grid system -- mobile first! */
 /* flex parent */
@@ -59,41 +76,14 @@ div h3 {
 	flex: 0 0 92%;	
 
 	border: 2px ridge white;
-	/*background-color: mediumblue;*/
+}
+
+[class*="column-"] {
+	margin-left: 4%;
+	flex: 0 0 92%;	
 }
 
 /* Add background colors to see how much space each column is taking */
-
-
-.col-1 {
-
-}
-
-.col-2 {
-	
-}
-
-.col-3-1 {
-
-}
-
-.col-3-2 {
-
-}
-
-.col-4 {
-	
-}
-
-.col-5-1 {
-
-}
-
-.col-5-2 {
-}
-
-.col-5-3 {
-}
 
 /* Tablet Landscape Screen Sizes */
 @media only screen and (min-width: 480px)  {
@@ -117,8 +107,7 @@ div h3 {
 }
 /* Desktop screen Sizes */
 @media only screen and (min-width: 768px) {
-  
-  
+
  	.col-1 {
 		flex: 0 0 20%;
 	}
@@ -151,5 +140,15 @@ div h3 {
 		flex: 0 0 20%;
 	}
 
+	.column-6 {
+		flex: 0 0 8%;
+		height: 100px;
+		margin-top: 20px;
+	}
+
+	.column-6-2 {
+		flex: 0 0 20%;
+		height: 150px;
+	}
 
 }
