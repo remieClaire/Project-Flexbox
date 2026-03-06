@@ -103,6 +103,13 @@ article p:last-of-type {
 		flex: 0 0 44%;
 	}
 
+	/* set second element's order to -1 so it appears above elements 1 and 2 */
+	.col-5-2 {
+		order: -1;
+	}
+
+
+
 
 }
 /* Desktop screen Sizes */
@@ -129,6 +136,7 @@ article p:last-of-type {
 	}
 
 	.col-5-1 {
+		order: ;
 		flex: 0 0 20%;
 	}
 
