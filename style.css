@@ -50,14 +50,15 @@ div h3 {
 
 /* targeting paragraphs */
 div p {
-	text-align: center;
+	text-align: left;
 }
 
 
-/* targeting links which are stored in <p> element */
+/* targeting links which are stored in <p> element 
 article p:last-of-type {
 	text-align: left;
 }
+*/
 
 
 /* grid system -- mobile first! */
@@ -149,8 +150,6 @@ article p:last-of-type {
 
 	.column-6 {
 		flex: 0 0 8%;
-		height: 100px;
-		margin-top: 20px;
 	}
 
 	.column-6-2 {
