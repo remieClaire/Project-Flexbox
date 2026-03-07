@@ -84,6 +84,14 @@ article p:last-of-type {
 	flex: 0 0 92%;	
 }
 
+[class*="column-6"] {
+	display: flex;
+	flex-flow: column wrap;
+
+	/* centers content along main axis */
+	justify-content: center;
+}
+
 /* Add background colors to see how much space each column is taking */
 
 /* Tablet Landscape Screen Sizes */
@@ -149,12 +157,13 @@ article p:last-of-type {
 	}
 
 	.column-6 {
-		flex: 0 0 8%;
+		align-self: start;
+		flex: 0 0 13%;
 	}
 
 	.column-6-2 {
-		flex: 0 0 20%;
-		height: 150px;
+		align-self: start;
+		flex: 0 0 24%;
 	}
 
 }
